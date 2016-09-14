@@ -108,8 +108,8 @@ module RestClient
       puts "this is working via puts"
       warn('this is working via warn')
       warn('warning: calling Response#to_i is not recommended')
-      puts self.inspect.to_s
-      puts caller.to_s
+      puts "self: #{self.inspect.to_s}"
+      puts "caller: #{caller.to_s}"
       super
     end
 
