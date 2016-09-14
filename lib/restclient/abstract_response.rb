@@ -105,10 +105,11 @@ module RestClient
     end
 
     def to_i
-      warn('this is working!')
+      puts "this is working via puts"
+      warn('this is working via warn')
       warn('warning: calling Response#to_i is not recommended')
-      warn(self.inspect)
-      warn(caller)
+      puts self.inspect.to_s
+      puts caller.to_s
       super
     end
 
